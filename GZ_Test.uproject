@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{669FD9F0-4733-F424-3519-AEB82D457C56}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "GZ_Test",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"CoreUObject",
+				"Engine",
+				"UMG"
+			]
+		}
+	]
+}
