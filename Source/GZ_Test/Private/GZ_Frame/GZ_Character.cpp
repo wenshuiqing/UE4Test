@@ -2,13 +2,19 @@
 
 #include "GZ_Character.h"
 #include "GZ_Helper.h"
+#include <Components/SkeletalMeshComponent.h>
+#include <Engine/SkeletalMeshSocket.h>
 
 // Sets default values
 AGZ_Character::AGZ_Character()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	GZHelper::Debug(TEXT("AGZ_Character"));
+
+	USkeletalMeshSocket* socket = GetMesh()->GetSocketByName(FName("HpPos"));
+
+	//socket->GetSocketLocation()
 }
 
 // Called when the game starts or when spawned

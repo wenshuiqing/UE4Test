@@ -24,8 +24,8 @@ public:
 
 	UPROPERTY( Meta = (BindWidget))
 		UImage* TextureImage;
-	UPROPERTY(Meta = (BindWidget))
-		UOverlay* HandleWidget;
+	/*UPROPERTY(Meta = (BindWidget))
+		UOverlay* HandleWidget;*/
 
 	void AssignTexture(UTexture2D* InTexture);
 

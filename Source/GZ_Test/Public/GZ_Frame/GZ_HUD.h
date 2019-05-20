@@ -7,11 +7,22 @@
 #include "GZ_HUD.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class GZ_TEST_API AGZ_HUD : public AHUD
 {
 	GENERATED_BODY()
-	
+
+
+public:
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UGZHUDUserWidget> GZHUDUserWidget;
+
+
+protected:
+	virtual void BeginPlay() override;
+
+
+
 };
